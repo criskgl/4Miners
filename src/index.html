@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+  google.charts.load('current', {'packages':['gauge']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Label', 'Value'],
+      ['MH/S', 45],
+    ]);
+
+    var options = {
+      width: 500, height: 220,
+      redFrom: 23, redTo: 30,
+      yellowFrom:30, yellowTo: 34,
+      greenFrom:34, greenTo: 40,
+      minorTicks: 5,
+      max: 40
+    };
+
+    var chart = new google.visualization.Gauge(document.getElementById('chart-own'));
+
+    chart.draw(data, options);
+
+    setInterval(function() {
+      data.setValue(0, 1, 35+Math.floor(Math.random() * 4) + 1);
+      chart.draw(data, options);
+    }, 500);
+    setInterval(function() {
+      data.setValue(1, 1, 35-Math.floor(Math.random() * 4) + 1);
+      chart.draw(data, options);
+    }, 500);
+
+  }
+  </script>
+  <script type="text/javascript">
+  google.charts.load('current', {'packages':['gauge']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data02 = google.visualization.arrayToDataTable([
+      ['Label', 'Value'],
+      ['MH/S', 335],
+    ]);
+
+    var options02 = {
+      width: 500, height: 220,
+      redFrom: 300, redTo: 310,
+      yellowFrom:310, yellowTo: 330,
+      greenFrom:330, greenTo: 350,
+      minorTicks: 5,
+      max: 350
+    };
+
+    var chart = new google.visualization.Gauge(document.getElementById('chart-associates'));
+
+    chart.draw(data02, options02);
+
+    setInterval(function() {
+      data02.setValue(0, 1, 335+Math.floor(Math.random() * 4) + 2);
+      chart.draw(data02, options02);
+    }, 500);
+    setInterval(function() {
+      data02.setValue(1, 1, 335-Math.floor(Math.random() * 4) + 2);
+      chart.draw(data02, options02);
+    }, 500);
+
+  }
+  </script>
+
+  <title>4Miners</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="img/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <!--Start of navigation-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/4miners.svg" alt="company logo"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#crew">CREW</a></li>
+          <li><a href="#equipment">EQUIPMENT</a></li>
+          <li><a href="#statistics">STATISTICS</a></li>
+          <li><a href="#invest">INVEST</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End of navigation-->
+
+  <!--Landing image-->
+
+  <header class="intro-header">
+    <div class="container">
+      <div class="intro-message">
+        <h1>In ETHER we trust</h1>
+        <hr class="intro-divider">
+      </div>
+    </div>
+  </header>
+  <!--End of Landing image-->
+
+  <!--Start of About-->
+  <div class="container-fluid">
+    <div class="row" id="about">
+      <div class="heading-title text-center">
+        <h3 class="text-uppercase">About</h3>
+        <hr class="title-divider">
+      </div>
+
+      <h4>We are cryptocurrency miners and traders, ready to put you up and running into the growing Bitcoin and Ether markets</h4>
+      <div class="icon-holder">
+
+        <i class="fa fa-line-chart" id="about-icon"></i>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!--End of About-->
+
+  <!--Start of crew-->
+  <div class="container-fluid">
+    <div class="row" id=crew>
+      <div class="heading-title text-center">
+        <h3 class="text-uppercase">Crew</h3>
+        <hr class="title-divider">
+      </div>
+      <div class="col-md-2 col-md-offset-2 col-sm-3 col-xs-6">
+        <div class="team-member">
+          <div class="team-img">
+            <img class="img-thumbnail" src="img/cris.png" alt="team member" class="img-responsive">
+          </div>
+          <div class="team-hover hidden-xs">
+            <div class="desk">
+              <p id="name-crew-mobile">Cris Gómez</p>
+              <p id="title-crew-mobile">Web Designer</p>
+            </div>
+            <div class="s-link">
+              <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </div>
+          </div>
+          <div class="hidden-md hidden-lg">
+            <p id="name-crew-mobile">Cris Gómez</p>
+            <p id="title-crew-mobile">Web Designer</p>
+            <p id="social-crew-mobile">
+              <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <div class="team-member">
+          <div class="team-img">
+            <img class="img-thumbnail"src="img/guille.png" alt="team member" class="img-responsive">
+          </div>
+          <div class="team-hover hidden-xs">
+            <div class="desk">
+              <h4>Guille del Águila</h4>
+              <p>Trading Expert</p>
+            </div>
+            <div class="s-link">
+              <a href="https://www.linkedin.com/in/guillermo-del-%C3%A1guila-ferrandis-3a89b4129/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </div>
+          </div>
+          <div class="hidden-md hidden-lg">
+            <p id="name-crew-mobile">Guille del Águila</p>
+            <p id="title-crew-mobile">Trading expert</p>
+            <p id="social-crew-mobile">
+              <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <div class="team-member">
+          <div class="team-img">
+            <img class="img-thumbnail" src="img/pablo.png" alt="team member" class="img-responsive">
+          </div>
+          <div class="team-hover hidden-xs">
+            <div class="desk">
+              <h4>Pablo Escrivá</h4>
+              <p>CTO</p>
+            </div>
+            <div class="s-link">
+              <a href="https://twitter.com/escriva_pablo"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/escrivapablo/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </div>
+          </div>
+          <div class="hidden-md hidden-lg">
+            <p id="name-crew-mobile">Pablo Escrivá</p>
+            <p id="title-crew-mobile">CTO</p>
+            <p id="social-crew-mobile">
+              <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-3 col-xs-6">
+        <div class="team-member">
+          <div class="team-img">
+            <img class="img-thumbnail" src="img/santi.png" alt="team member" class="img-responsive">
+          </div>
+          <div class="team-hover hidden-xs">
+            <div class="desk">
+              <h4>Santi Pérez</h4>
+              <p>Crypto trading expert</p>
+            </div>
+            <div class="s-link">
+              <a href="https://twitter.com/perzmd"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/santiago-p%C3%A9rez-medina-098605114/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </div>
+          </div>
+          <div class="hidden-md hidden-lg">
+            <p id="name-crew-mobile">Santi Pérez</p>
+            <p id="title-crew-mobile">Marketing</p>
+            <p id="social-crew-mobile">
+              <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
+              <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Start of equipment-->
+  <div class="container-fluid">
+    <div class="row" id="equipment">
+      <div class="heading-title text-center">
+        <h3 class="text-uppercase">Equipment</h3>
+        <hr class="title-divider">
+      </div>
+    </div>
+  </div>
+    <!--Start of statistics-->
+    <div class="container-fluid">
+      <div class="row" id="statistics">
+        <div class="heading-title text-center">
+          <h3 class="text-uppercase">Statistics</h3>
+          <hr class="title-divider">
+        </div>
+
+        <div class="container">
+          <center><h4 class="text-uppercase" id="charts-title">OUR HASHPOWER</h4></center>
+          <center><div id="chart-own" style="width: 220px; height: 220px; display: inline-block;margin: 0 auto;
+            width: 80%;"></div></center>
+            <center><a href="https://eth.nanopool.org/account/0x15292c79b441df84467d63a0fd92122234767dd4"><img src="img/nanopool.png" alt="nanopool link" style="margin: 0 auto;"></a></center>
+          </div>
+          <center><h4 class="text-uppercase" id="charts-title">ASSOCIATE´S HASHPOWER</h4></center>
+          <div class="container">
+            <center><div id="chart-associates" style="width: 220; height: 220; display: inline-block;margin: 0 auto;
+              width: 80%;"></div></center>
+              <center><a href="https://eth.nanopool.org/account/0x7537cdf77e58edda0a7e37cce842a79da8489dcf"><img src="img/nanopool.png" alt="nanopool link" style="margin: 0 auto;"></a></center>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row" id="invest">
+            <div class="heading-title text-center">
+              <h3 class="text-uppercase">Invest</h3>
+              <hr class="title-divider">
+            </div>
+
+            <h4>Go ahead, it is not too late... yet</h4>
+
+            <center><button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button></center>
+
+            <div class="icon-holder">
+
+              <img src="img/badge-mine.png" alt="Retro Mining Badge">
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row" id="contact">
+            <div class="heading-title text-center">
+              <h3 class="text-uppercase">Contact</h3>
+              <hr class="title-divider">
+            </div>
+
+            <div id="contact-data" class="container-fluid bg-grey">
+              <div class="row">
+                <div class="col-sm-5">
+                  <p>Contact us and we'll get back to you within 24 hours.</p>
+                  <p><span class="glyphicon glyphicon-map-marker"></span> Madrid, Spain</p>
+                  <p><span class="glyphicon glyphicon-phone"></span> +34 648286182</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span> cris.kgl@gmail.com</p>
+                </div>
+                <div class="col-sm-7 slideanim">
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                  <div class="row" >
+                    <div class="col-sm-12 form-group">
+                      <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="googleMap" style="height:400px;width:100%;"></div>
+            <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(40.5446049, -4.0118293);
+              var mapProp = {center:myCenter, zoom:16, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+              var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+              var marker = new google.maps.Marker({position:myCenter});
+              marker.setMap(map);
+            }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjWDFgerTecNVFbrPyYfYf8SlTixAeXeU&callback=myMap"></script>
+
+          </div>
+        </div>
+
+
+
+        <footer class="container-fluid bg-4 text-center">
+          <p>Cristian Gómez ©</p>
+        </footer>
+
+      </body>
+
+
+
+
+
+      </html>
