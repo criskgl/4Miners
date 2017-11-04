@@ -303,7 +303,10 @@
   padding-right: 20px;
   line-height: 50px;
 }
-
+#coin-statistics{
+  background-color: black;
+  color: orange;
+}
 /*INVEST*/
 #invest {
   background-color: black;
@@ -321,8 +324,20 @@
   padding-right: 20px;
   line-height: 50px;
 }
+.panel-heading{
+  background-color: hsl(28, 70%, 48%) !important;
+}
+.panel-body{
+  background-color: hsl(28, 70%, 78%) !important;
+}
+.panel-footer{
+  background-color: hsl(28, 70%, 58%) !important;
+}
+#best-choice-plan::before{
+  content: url("/img/best-choice.png") !important;
+}
 
-/*INVEST*/
+/*CONTACT*/
 #contact {
   background-color: black;
   padding-bottom: 100px;
@@ -392,17 +407,21 @@
   text-align: center;
   margin: 30px 30px 30px 30px;
 }
+#invest-button>a{
+  color: black;
+}
+#invest-button>a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#invest-heading-normal{
+  margin-top: 55px;
+}
 
 #charts-title {
   color: hsl(28, 70%, 58%);
   letter-spacing: 3px;
   margin-top: 50px;
   text-align: center;
-}
-/*PRICING*/
-#pricing {
-  background-color: black;
-  padding-bottom: 100px;
-  padding-top: 75px;
-  color: hsl(28, 70%, 58%);
 }
