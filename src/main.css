@@ -333,9 +333,6 @@
 .panel-footer{
   background-color: hsl(28, 70%, 58%) !important;
 }
-#best-choice-plan::before{
-  content: url("/img/best-choice.png") !important;
-}
 
 /*CONTACT*/
 #contact {
