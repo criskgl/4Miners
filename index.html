@@ -154,8 +154,8 @@
           </div>
           <div class="team-hover hidden-xs">
             <div class="desk">
-              <p id="name-crew-mobile">Cris Gómez</p>
-              <p id="title-crew-mobile">Web Designer</p>
+              <h4>Cris Gómez</h4>
+              <p id="title-crew">Web Designer<br>Trading Expert</p>
             </div>
             <div class="s-link">
               <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
@@ -164,7 +164,7 @@
           </div>
           <div class="hidden-md hidden-lg">
             <p id="name-crew-mobile">Cris Gómez</p>
-            <p id="title-crew-mobile">Web Designer</p>
+            <p id="title-crew-mobile">Web Designer<br>Trading Expert</p>
             <p id="social-crew-mobile">
               <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
               <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
@@ -259,7 +259,7 @@
           <hr class="title-divider">
         </div>
 
-        <div class="container">
+      <!--<div class="container">
           <center><h4 class="text-uppercase" id="charts-title">OUR HASHPOWER</h4></center>
           <center><div id="chart-own" style="width: 220px; height: 220px; display: inline-block;margin: 0 auto;
             width: 80%;"></div></center>
@@ -270,6 +270,15 @@
             <center><div id="chart-associates" style="width: 220; height: 220; display: inline-block;margin: 0 auto;
               width: 80%;"></div></center>
               <center><a href="https://eth.nanopool.org/account/0x7537cdf77e58edda0a7e37cce842a79da8489dcf"><img src="img/nanopool.png" alt="nanopool link" style="margin: 0 auto;"></a></center>
+            </div>*/-->
+          <div class="col-md-6" id="coin-statistics">
+            <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+<div class="coinmarketcap-currency-widget" data-currency="bitcoin" data-base="EUR" ></div>
+          </div>
+
+          <div class="col-md-6" id="coin-statistics">
+              <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/currency.js"></script>
+  <div class="coinmarketcap-currency-widget" data-currency="ethereum" data-base="EUR" ></div>
             </div>
 
 
@@ -287,52 +296,52 @@
 
                   <div class="col-sm-4">
                     <div class="panel panel-default text-center">
-                      <div class="panel-heading">
-                        <h1>Chill</h1>
+                      <div class="panel-heading" >
+                        <h1 id="invest-heading-normal">Chill</h1>
                       </div>
                       <div class="panel-body">
                         <p><strong>Low Risk</strong></p>
-                        <p><strong>15%</strong>Max Loss</p>
-                        <p><strong>30%</strong>Fee on benefit</p>
+                        <p><strong>Full Account setup</strong></p>
+                        <p><strong>40%</strong>Fee on benefit</p>
                       </div>
                       <div class="panel-footer">
                         <h3>200€</h3>
                         <h4>minimum ammount</h4>
-                        <button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button>
+                        <a href="#contact"><button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button></a>
                       </div>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="panel panel-default text-center">
                       <div class="panel-heading">
-                        <h1>Basic</h1>
+                        <h1 id="best-choice-plan">Basic</h1>
                       </div>
                       <div class="panel-body">
                         <p><strong>Moderate Risk</strong></p>
-                        <p><strong>20%</strong>Max Loss</p>
+                        <p><strong>Full Account setup</strong></p>
                         <p><strong>10%</strong>Fee on benefit</p>
                       </div>
                       <div class="panel-footer">
-                        <h3>200€</h3>
+                        <h3>250€</h3>
                         <h4>minimum ammount</h4>
-                        <button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button>
+                        <a href="#contact"><button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button></a>
                       </div>
                     </div>
                   </div>
                  <div class="col-sm-4">
                     <div class="panel panel-default text-center">
                       <div class="panel-heading">
-                        <h1>All in</h1>
+                        <h1 id="invest-heading-normal">All in</h1>
                       </div>
                       <div class="panel-body">
                         <p><strong>Max Benefit, Highest Risk</strong></p>
-                        <p><strong>60%</strong>Max Loss</p>
-                        <p><strong>15%</strong>Fee on benefit</p>
+                        <p><strong>Full Account setup</strong></p>
+                        <p><strong>7%</strong>Fee on benefit</p>
                       </div>
                       <div class="panel-footer">
-                        <h3>200€</h3>
+                        <h3>1000€</h3>
                         <h4>minimum ammount</h4>
-                        <button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button>
+                        <a href="#contact"><button type="button" name="button" class="button btn-success btn-lg" id="invest-button">Invest Now</button></a>
                       </div>
                     </div>
                   </div>
@@ -368,7 +377,7 @@
                       <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
                     </div>
                   </div>
-                  <textarea class="form-control" id="comments" name="comments" placeholder="Name the plan you want (CHILL, BASIC, ALL IN)" rows="5"></textarea><br>
+                  <textarea class="form-control" id="comments" name="comments" placeholder="Name your favourite plan (CHILL, BASIC, ALL IN)" rows="5"></textarea><br>
                   <div class="row" >
                     <div class="col-sm-12 form-group">
                       <button class="btn btn-default pull-right" type="submit">Send</button>
