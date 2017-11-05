@@ -139,10 +139,9 @@
       </div>
 
       <h4>We are enthusiastic cryptocurrency miners and traders, ready to put you up and running into the growing Bitcoin and Ether markets</h4>
-      <div class="icon-holder">
 
 
-        <div class="col-md-6" id="coin-statistics">
+        <div class="col-md-5 col-md-offset-1" id="coin-statistics">
           <script type="text/javascript">
         baseUrl = "https://widgets.cryptocompare.com/";
         var scripts = document.getElementsByTagName("script");
@@ -162,24 +161,24 @@
 
         </div>
 
-        <div class="col-md-6" id="coin-statistics">
+        <div class="col-md-5 " id="coin-statistics">
           <script type="text/javascript">
-          baseUrl = "https://widgets.cryptocompare.com/";
-          var scripts = document.getElementsByTagName("script");
-          var embedder = scripts[ scripts.length - 1 ];
-          var cccTheme = {"General":{"background":"#333","borderColor":"#545454","borderRadius":"4px 4px 0 0"},"Header":{"background":"#000","color":"#FFF"},"Followers":{"background":"#f7931a","color":"#FFF","borderColor":"#e0bd93","counterBorderColor":"#fdab48","counterColor":"#f5d7b2"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.5)","borderColor":"#56ca9e"},"Conversion":{"background":"#000","color":"#999"}};
-          (function (){
-          var appName = encodeURIComponent(window.location.hostname);
-          if(appName==""){appName="local";}
-          var s = document.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          var theUrl = baseUrl+'serve/v2/coin/chart?fsym=ETH&tsym=EUR&period=1Y';
-          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-          embedder.parentNode.appendChild(s);
-          })();
-          </script>
-          </div>
+  baseUrl = "https://widgets.cryptocompare.com/";
+  var scripts = document.getElementsByTagName("script");
+  var embedder = scripts[ scripts.length - 1 ];
+  var cccTheme = {"General":{"background":"#333","borderColor":"#545454","borderRadius":"4px 4px 0 0"},"Header":{"background":"#000","color":"#FFF"},"Followers":{"background":"#f7931a","color":"#FFF","borderColor":"#e0bd93","counterBorderColor":"#fdab48","counterColor":"#f5d7b2"},"Data":{"priceColor":"#FFF","infoLabelColor":"#CCC","infoValueColor":"#CCC"},"Chart":{"fillColor":"rgba(86,202,158,0.5)","borderColor":"#56ca9e"},"Conversion":{"background":"#000","color":"#999"}};
+  (function (){
+  var appName = encodeURIComponent(window.location.hostname);
+  if(appName==""){appName="local";}
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  var theUrl = baseUrl+'serve/v2/coin/chart?fsym=ETH&tsym=EUR&period=6M';
+  s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+  embedder.parentNode.appendChild(s);
+  })();
+  </script>
+
 
       </div>
 
@@ -203,7 +202,7 @@
           <div class="team-hover hidden-xs">
             <div class="desk">
               <h4>Cris Gómez</h4>
-              <p id="title-crew">Web Designer<br>Trading Expert</p>
+              <p id="title-crew">Web Designer<br>Crypto-trading Advisor</p>
             </div>
             <div class="s-link">
               <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
@@ -212,7 +211,7 @@
           </div>
           <div class="hidden-md hidden-lg">
             <p id="name-crew-mobile">Cris Gómez</p>
-            <p id="title-crew-mobile">Web Designer<br>Trading Expert</p>
+            <p id="title-crew-mobile">Web Designer<br>Crypto-trading Advisor</p>
             <p id="social-crew-mobile">
               <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
               <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
@@ -229,7 +228,7 @@
           <div class="team-hover hidden-xs">
             <div class="desk">
               <h4>Guille del Águila</h4>
-              <p>Trading Expert</p>
+              <p>Crypto-trading Advisor</p>
             </div>
             <div class="s-link">
               <a href="https://www.linkedin.com/in/guillermo-del-%C3%A1guila-ferrandis-3a89b4129/"><i class="fa fa-linkedin" id="social-icon"></i></a>
@@ -237,7 +236,7 @@
           </div>
           <div class="hidden-md hidden-lg">
             <p id="name-crew-mobile">Guille del Águila</p>
-            <p id="title-crew-mobile">Trading expert</p>
+            <p id="title-crew-mobile">Crypto-trading Advisor</p>
             <p id="social-crew-mobile">
               <a href="https://twitter.com/_HackRis_"><i class="fa fa-twitter" id="social-icon"></i></a>
               <a href="https://www.linkedin.com/in/cristian-kublai-g%C3%B3mez-l%C3%B3pez-4bb387104/"><i class="fa fa-linkedin" id="social-icon"></i></a>
